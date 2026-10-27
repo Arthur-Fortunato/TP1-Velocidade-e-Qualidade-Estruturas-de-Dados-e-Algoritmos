@@ -78,15 +78,11 @@ listas_teste = [
 for array in listas_teste:
     resultado_original = h(array)
     resultado_refatorado = bubble_sort(array)
-
     print(f"Bubble Sort: {resultado_original == resultado_refatorado}")
-
     array_ordenado = resultado_original[0]
 
     for alvo in [1, 5, 9, -1]:
         resultado_original_busca = f(array_ordenado, alvo)
         resultado_refatorado_busca = busca_binaria(array_ordenado, alvo)
-
         print(f"Busca binária: {resultado_original_busca == resultado_refatorado_busca}")
-
     print()
